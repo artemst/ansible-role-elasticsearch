@@ -1,2 +1,3 @@
 ---
-# handlers file for elasticsearch-5
+- name: restart elasticsearch
+  service: name=elasticsearch state=restarted

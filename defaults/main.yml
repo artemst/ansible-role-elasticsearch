@@ -1,2 +1,16 @@
 ---
-# defaults file for elasticsearch-5
+# ES cluster name. Make sure there are no other ES clusters with the same name.
+es_cluster_name: es-cluster
+# ES node name
+es_node_name: es-node1
+
+# Network settings
+es_network_host: localhost
+es_network_port: 9200
+
+# Require name for indicies deletion
+es_destructive_requires_name: "true"
+
+# Min and Max values of JVM heap size for Elasticsearch
+es_heapsize_min: 2g
+es_heapsize_max: 2g
