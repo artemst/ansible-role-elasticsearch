@@ -1,4 +1,7 @@
 ---
+# Elasticsearch version (ex. 5, for installing 5.x version)
+es_version: 5
+
 # ES cluster name. Make sure there are no other ES clusters with the same name.
 es_cluster_name: es-cluster
 # ES node name

@@ -1,9 +1,9 @@
 ---
-- name: Add Elasticsearch repository.
-  copy:
-    src: elasticsearch.repo
-    dest: /etc/yum.repos.d/elasticsearch.repo
+- name: Add Elastic repository
+  template:
+    src: elastic.repo.j2
+    dest: /etc/yum.repos.d/elastic.repo
     mode: 0644
 
-- name: Install Elasticsearch.
+- name: Install Elasticsearch
   yum: pkg=elasticsearch state=installed
